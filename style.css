@@ -1,0 +1,81 @@
+/* Idle Transport Corp - support, privacy and legal pages (GitHub Pages; no cookies, no third-party content). */
+@font-face {
+  font-family: "Nunito";
+  src: url("fonts/Nunito.ttf") format("truetype");
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
+:root {
+  --bg: #f4f1ea;
+  --card: #ffffff;
+  --ink: #33364d;
+  --ink-soft: #6a6e85;
+  --brand: #faba34;
+  --brand-edge: #d99a2b;
+  --link: #2270b4;
+  --line: #e6e0d4;
+  --mark: #ffe9a8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1d1f2b;
+    --card: #282b3a;
+    --ink: #eef0f7;
+    --ink-soft: #a9adc2;
+    --link: #7fb8ec;
+    --line: #3a3e52;
+    --mark: #6b5414;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Nunito", -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+header {
+  background: linear-gradient(180deg, #ffd36b, var(--brand));
+  border-bottom: 6px solid var(--brand-edge);
+  padding: 28px 16px 22px;
+  text-align: center;
+  color: #33364d;
+}
+
+header img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18); }
+header h1 { margin: 12px 0 2px; font-size: 30px; font-weight: 900; }
+header p { margin: 0; font-weight: 700; }
+
+nav.lang { text-align: center; margin: 18px 0 0; font-weight: 800; }
+nav.lang a { color: var(--link); text-decoration: none; margin: 0 8px; }
+nav.lang a.on { color: var(--ink); text-decoration: underline; }
+
+main { max-width: 760px; margin: 0 auto; padding: 8px 16px 40px; }
+
+section.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 6px 22px 18px;
+  margin: 18px 0;
+}
+
+h2 { font-size: 23px; font-weight: 900; margin: 18px 0 6px; }
+h3 { font-size: 18px; font-weight: 800; margin: 18px 0 4px; }
+p, li { color: var(--ink); }
+.soft { color: var(--ink-soft); font-size: 15px; }
+a { color: var(--link); }
+mark { background: var(--mark); color: inherit; padding: 0 3px; border-radius: 4px; }
+
+footer { text-align: center; padding: 10px 16px 40px; color: var(--ink-soft); font-size: 15px; }
+footer a { margin: 0 8px; }
+
+/* Only the visitor's language when JavaScript runs (site.js); without it both stay. */
+.js [data-lang]:not(.shown) { display: none; }
