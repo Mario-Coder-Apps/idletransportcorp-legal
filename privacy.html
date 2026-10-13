@@ -12,7 +12,8 @@
 <body>
 <!--
   KEEP THIS PAGE TRUE TO THE APP (docs/STORE.md). It describes the app as it is on 2026-10-13: no account, progress only
-  on the device, purchases through Apple, rewarded videos through AdMob (with consent), no analytics, no crash reports.
+  on the device, purchases through Apple, rewarded videos through AdMob (with consent), crash reports through Sentry,
+  game statistics through GameAnalytics (with consent in the EEA/UK/CH).
   Before a service goes live, switch on its section below (in both languages), change "No ads, no analytics" and the
   App Privacy answers in App Store Connect, and update the date. Marked: ADMOB, SENTRY, GAMEANALYTICS.
 -->
@@ -27,7 +28,7 @@
 
 <div data-lang="en">
 <section class="card">
-  <p class="soft">Last updated: 13 October 2026 (rewarded videos). This policy covers the iPhone game “Idle Transport Corp” (the app) and
+  <p class="soft">Last updated: 13 October 2026 (videos, crash reports, statistics). This policy covers the iPhone game “Idle Transport Corp” (the app) and
   this website.</p>
 
   <h2>1. Who is responsible</h2>
@@ -35,7 +36,8 @@
 
   <h2>2. In short</h2>
   <p>The app works without an account or sign-up. Your progress is stored only on your device. The app does not send
-  any personal data to us. Only if you start an optional video does Google AdMob deliver an ad (section 6).</p>
+  any personal data to us. Partners deliver optional videos and receive crash reports and – with your consent – game
+  statistics (section 6).</p>
 
   <h2>3. Your progress</h2>
   <p>Your progress (game state, settings, the advantages you bought and the identifiers of completed purchases) is stored
@@ -52,27 +54,25 @@
   <p>The app may show Apple's rating dialog. You rate directly with Apple; we only see the ratings that are published in
   the App Store.</p>
 
-  <h2>6. No analytics, no crash reports</h2>
-  <p>The app currently contains no analytics and no crash reporting by third parties. Its only advertising are the
-  optional rewarded videos described below.</p>
+  <h2>6. Services of partners</h2>
+  <p>The app uses three services of partners, described below: optional rewarded videos (Google AdMob), crash reports
+  (Sentry) and – only with your consent in the EEA, the UK and Switzerland – game statistics (GameAnalytics). It does
+  not use any of them to identify you.</p>
   <h2>Rewarded videos (Google AdMob)</h2>
   <p>Only when you start a video to get a reward does the app load an ad through Google AdMob (Google Ireland Limited,
   Gordon House, Barrow Street, Dublin 4, Ireland). Google processes device information, your IP address, ad interactions
   and – only if you allow it in Apple's tracking prompt – the advertising identifier. In the EEA and the UK the app asks
   for your consent first (Art. 6(1)(a) GDPR); you can change your choice in the settings. Google's privacy policy:
   <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
-  <!-- SENTRY (switch on before crash reports go live):
   <h2>Crash reports (Sentry)</h2>
   <p>If the app crashes or runs into an error, it sends a report to Sentry (Functional Software, Inc.; data stored in
   the EU): device model, iOS and app version, the error and the last steps in the game. The report contains no name,
   contact or advertising identifier. Legal basis: our legitimate interest in a working game (Art. 6(1)(f) GDPR).</p>
-  -->
-  <!-- GAMEANALYTICS (switch on before analytics go live; needs consent in the EU):
   <h2>Game statistics (GameAnalytics)</h2>
-  <p>With your consent the app sends anonymous game events (for example tutorial steps, sites opened, purchases by
-  product) with a random identifier to GameAnalytics ApS (Denmark), so that we can see where the game is too hard or
-  too easy (Art. 6(1)(a) GDPR). You can withdraw your consent in the settings.</p>
-  -->
+  <p>The app sends anonymous game events (for example tutorial steps, sites opened, purchases by product) with a random
+  identifier to GameAnalytics ApS (Denmark), so that we can see where the game is too hard or too easy. In the EEA, the
+  UK and Switzerland only with your consent – the game asks once (Art. 6(1)(a) GDPR); elsewhere it is on. Either way you
+  can switch it off at any time: Settings › Play statistics.</p>
 
   <h2>7. E-mail to us</h2>
   <p>If you write to us, we use your e-mail address and your message to answer you (Art. 6(1)(b) and (f) GDPR). We
@@ -87,7 +87,8 @@
   <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com</a>.</p>
 
   <h2>9. Children</h2>
-  <p>The game is suitable for all ages and collects no personal data.</p>
+  <p>The game is suitable for all ages. It never asks for a name, contact details or an account; the partner services
+  above work without them.</p>
 
   <h2>10. Your rights</h2>
   <p>You have the right to access, rectification, erasure, restriction of processing, data portability and to object
@@ -102,7 +103,7 @@
 
 <div data-lang="de">
 <section class="card">
-  <p class="soft">Stand: 13. Oktober 2026 (Belohnungsvideos). Diese Erklärung gilt für das iPhone-Spiel „Idle Transport Corp“ (die App) und
+  <p class="soft">Stand: 13. Oktober 2026 (Videos, Absturzberichte, Statistik). Diese Erklärung gilt für das iPhone-Spiel „Idle Transport Corp“ (die App) und
   für diese Website.</p>
 
   <h2>1. Verantwortlicher</h2>
@@ -110,8 +111,8 @@
 
   <h2>2. Kurz gesagt</h2>
   <p>Die App kommt ohne Konto und ohne Anmeldung aus. Dein Spielstand wird nur auf deinem Gerät gespeichert. Die App
-  sendet keine personenbezogenen Daten an uns. Nur wenn du ein freiwilliges Video startest, liefert Google AdMob
-  Werbung aus (Abschnitt 6).</p>
+  sendet keine personenbezogenen Daten an uns. Partner liefern die freiwilligen Videos und erhalten Absturzberichte
+  und – mit deiner Einwilligung – eine Spielstatistik (Abschnitt 6).</p>
 
   <h2>3. Dein Spielstand</h2>
   <p>Dein Spielstand (Fortschritt, Einstellungen, gekaufte Vorteile und die Kennungen abgeschlossener Käufe) liegt in der
@@ -128,9 +129,10 @@
   <p>Die App kann den Bewertungsdialog von Apple einblenden. Du bewertest direkt bei Apple; wir sehen nur die im App
   Store veröffentlichten Bewertungen.</p>
 
-  <h2>6. Keine Analyse, keine Absturzberichte</h2>
-  <p>Die App enthält derzeit keine Analyse und keine Absturzberichte von Drittanbietern. Werbung gibt es nur als die
-  unten beschriebenen freiwilligen Belohnungsvideos.</p>
+  <h2>6. Dienste von Partnern</h2>
+  <p>Die App nutzt drei Dienste von Partnern, die unten beschrieben sind: freiwillige Belohnungsvideos (Google AdMob),
+  Absturzberichte (Sentry) und – im EWR, im Vereinigten Königreich und in der Schweiz nur mit deiner Einwilligung –
+  eine Spielstatistik (GameAnalytics). Keiner davon dient dazu, dich zu identifizieren.</p>
   <h2>Belohnungsvideos (Google AdMob)</h2>
   <p>Nur wenn du ein Video für eine Belohnung startest, lädt die App Werbung über Google AdMob (Google Ireland Limited,
   Gordon House, Barrow Street, Dublin 4, Irland). Google verarbeitet dabei Geräteinformationen, deine IP-Adresse,
@@ -138,19 +140,16 @@
   und im Vereinigten Königreich fragt die App vorher deine Einwilligung ab (Art. 6 Abs. 1 lit. a DSGVO); du kannst
   deine Wahl in den Einstellungen ändern. Datenschutzerklärung von Google:
   <a href="https://policies.google.com/privacy?hl=de">policies.google.com/privacy</a>.</p>
-  <!-- SENTRY (vor dem Start der Absturzberichte einschalten):
   <h2>Absturzberichte (Sentry)</h2>
   <p>Stürzt die App ab oder tritt ein Fehler auf, sendet sie einen Bericht an Sentry (Functional Software, Inc.;
   Speicherung in der EU): Gerätemodell, iOS- und App-Version, den Fehler und die letzten Schritte im Spiel. Der Bericht
   enthält keinen Namen, keine Kontaktdaten und keine Werbe-ID. Rechtsgrundlage: unser berechtigtes Interesse an einem
   funktionierenden Spiel (Art. 6 Abs. 1 lit. f DSGVO).</p>
-  -->
-  <!-- GAMEANALYTICS (vor dem Start der Statistik einschalten; in der EU nur mit Einwilligung):
   <h2>Spielstatistik (GameAnalytics)</h2>
-  <p>Mit deiner Einwilligung sendet die App anonyme Spielereignisse (z. B. Tutorial-Schritte, eröffnete Standorte,
-  Käufe nach Produkt) mit einer zufälligen Kennung an GameAnalytics ApS (Dänemark), damit wir sehen, wo das Spiel zu
-  schwer oder zu leicht ist (Art. 6 Abs. 1 lit. a DSGVO). Du kannst die Einwilligung in den Einstellungen widerrufen.</p>
-  -->
+  <p>Die App sendet anonyme Spielereignisse (z. B. Tutorial-Schritte, eröffnete Standorte, Käufe nach Produkt) mit einer
+  zufälligen Kennung an GameAnalytics ApS (Dänemark), damit wir sehen, wo das Spiel zu schwer oder zu leicht ist. Im
+  EWR, im Vereinigten Königreich und in der Schweiz nur mit deiner Einwilligung – das Spiel fragt einmal (Art. 6 Abs. 1
+  lit. a DSGVO); anderswo ist sie an. In jedem Fall kannst du sie jederzeit abschalten: Einstellungen › Spielstatistik.</p>
 
   <h2>7. E-Mails an uns</h2>
   <p>Wenn du uns schreibst, verarbeiten wir deine E-Mail-Adresse und deine Nachricht, um dir zu antworten (Art. 6 Abs. 1
@@ -166,7 +165,8 @@
   <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com</a>.</p>
 
   <h2>9. Kinder</h2>
-  <p>Das Spiel ist für alle Altersgruppen geeignet und erhebt keine personenbezogenen Daten.</p>
+  <p>Das Spiel ist für alle Altersgruppen geeignet. Es fragt nie nach Namen, Kontaktdaten oder einem Konto; die
+  Partnerdienste oben kommen ohne sie aus.</p>
 
   <h2>10. Deine Rechte</h2>
   <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und
