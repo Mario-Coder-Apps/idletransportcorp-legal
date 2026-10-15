@@ -11,11 +11,12 @@
 </head>
 <body>
 <!--
-  KEEP THIS PAGE TRUE TO THE APP (docs/STORE.md). It describes the app as it is on 2026-10-13: no account, progress only
-  on the device, purchases through Apple, rewarded videos through AdMob (with consent), crash reports through Sentry,
-  game statistics through GameAnalytics (with consent in the EEA/UK/CH).
-  Before a service goes live, switch on its section below (in both languages), change "No ads, no analytics" and the
-  App Privacy answers in App Store Connect, and update the date. Marked: ADMOB, SENTRY, GAMEANALYTICS.
+  KEEP THIS PAGE TRUE TO THE APP (docs/STORE.md). It describes the app as it is on 2026-10-15: no account, progress only
+  on the device, purchases through Apple, rewarded videos through AdMob (with consent in the EEA/UK; started and preloaded
+  at launch), crash reports through Sentry, game statistics through GameAnalytics (with consent in the EEA/UK/CH) with its
+  identifiers (user ID, IDFV, IDFA once tracking is allowed - its privacy manifest: linked data, tracking domain).
+  When a service or what it collects changes, change both languages, the App Privacy answers in App Store Connect
+  (docs/STORE.md) and the date.
 -->
 <header>
   <img src="icon.png" alt="Idle Transport Corp">
@@ -28,16 +29,17 @@
 
 <div data-lang="en">
 <section class="card">
-  <p class="soft">Last updated: 13 October 2026 (videos, crash reports, statistics). This policy covers the iPhone game “Idle Transport Corp” (the app) and
+  <p class="soft">Last updated: 15 October 2026 (identifiers of the videos and the game statistics). This policy covers the iPhone game “Idle Transport Corp” (the app) and
   this website.</p>
 
   <h2>1. Who is responsible</h2>
   <p>Mario Haesler<br>Brombeerweg 14<br>14052 Berlin<br>Germany<br>E-mail: <a href="mailto:mariohaesler@protonmail.com">mariohaesler@protonmail.com</a></p>
 
   <h2>2. In short</h2>
-  <p>The app works without an account or sign-up. Your progress is stored only on your device. The app does not send
-  any personal data to us. Partners deliver optional videos and receive crash reports and – with your consent – game
-  statistics (section 6).</p>
+  <p>The app works without an account or sign-up. Your progress is stored only on your device. We do not receive any
+  personal data ourselves. Partners deliver the optional videos and receive crash reports and – in the EEA, the UK and
+  Switzerland only with your consent – game statistics; Google and GameAnalytics use identifiers of your device for
+  this (section 6).</p>
 
   <h2>3. Your progress</h2>
   <p>Your progress (game state, settings, the advantages you bought and the identifiers of completed purchases) is stored
@@ -55,24 +57,30 @@
   the App Store.</p>
 
   <h2>6. Services of partners</h2>
-  <p>The app uses three services of partners, described below: optional rewarded videos (Google AdMob), crash reports
-  (Sentry) and – only with your consent in the EEA, the UK and Switzerland – game statistics (GameAnalytics). It does
-  not use any of them to identify you.</p>
+  <p>The app uses three services of partners, described below: rewarded videos (Google AdMob), crash reports (Sentry)
+  and game statistics (GameAnalytics). Google and GameAnalytics work with identifiers of your device, as described
+  below; we do not combine them with other data about you.</p>
   <h2>Rewarded videos (Google AdMob)</h2>
-  <p>Only when you start a video to get a reward does the app load an ad through Google AdMob (Google Ireland Limited,
-  Gordon House, Barrow Street, Dublin 4, Ireland). Google processes device information, your IP address, ad interactions
-  and – only if you allow it in Apple's tracking prompt – the advertising identifier. In the EEA and the UK the app asks
-  for your consent first (Art. 6(1)(a) GDPR); you can change your choice in the settings. Google's privacy policy:
+  <p>The app starts Google AdMob (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland) when it opens
+  and loads the rewarded videos in advance, so that a video is ready when you want one. In the EEA and the UK it asks
+  for your consent first (Art. 6(1)(a) GDPR) and starts AdMob only after your choice; you can change it in the settings.
+  Google then processes device information, your IP address and an approximate location derived from it – even if you
+  never watch a video – and your interactions with the ads. Google uses the advertising identifier of your device
+  (IDFA) only if you allow it in Apple's tracking prompt. Google's privacy policy:
   <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
   <h2>Crash reports (Sentry)</h2>
   <p>If the app crashes or runs into an error, it sends a report to Sentry (Functional Software, Inc.; data stored in
   the EU): device model, iOS and app version, the error and the last steps in the game. The report contains no name,
   contact or advertising identifier. Legal basis: our legitimate interest in a working game (Art. 6(1)(f) GDPR).</p>
   <h2>Game statistics (GameAnalytics)</h2>
-  <p>The app sends anonymous game events (for example tutorial steps, sites opened, purchases by product) with a random
-  identifier to GameAnalytics ApS (Denmark), so that we can see where the game is too hard or too easy. In the EEA, the
-  UK and Switzerland only with your consent – the game asks once (Art. 6(1)(a) GDPR); elsewhere it is on. Either way you
-  can switch it off at any time: Settings › Play statistics.</p>
+  <p>The app sends game events (for example tutorial steps, sites opened, purchases by product and price, videos
+  watched) with device information (model, iOS version, language) to GameAnalytics ApS (Denmark), so that we can see
+  where the game is too hard or too easy. GameAnalytics links these events to identifiers of your device: a user ID it
+  creates, the identifier for vendors (IDFV) and – only if you allow it in Apple's tracking prompt – the advertising
+  identifier (IDFA). We use the statistics only to improve the game, not for advertising. In the EEA, the UK and
+  Switzerland the app sends them only with your consent – the game asks once (Art. 6(1)(a) GDPR); elsewhere they are
+  on. Either way you can switch them off at any time: Settings › Play statistics. GameAnalytics' privacy policy:
+  <a href="https://gameanalytics.com/privacy">gameanalytics.com/privacy</a>.</p>
 
   <h2>7. E-mail to us</h2>
   <p>If you write to us, we use your e-mail address and your message to answer you (Art. 6(1)(b) and (f) GDPR). We
@@ -103,16 +111,17 @@
 
 <div data-lang="de">
 <section class="card">
-  <p class="soft">Stand: 13. Oktober 2026 (Videos, Absturzberichte, Statistik). Diese Erklärung gilt für das iPhone-Spiel „Idle Transport Corp“ (die App) und
+  <p class="soft">Stand: 15. Oktober 2026 (Kennungen der Videos und der Spielstatistik). Diese Erklärung gilt für das iPhone-Spiel „Idle Transport Corp“ (die App) und
   für diese Website.</p>
 
   <h2>1. Verantwortlicher</h2>
   <p>Mario Haesler<br>Brombeerweg 14<br>14052 Berlin<br>Deutschland<br>E-Mail: <a href="mailto:mariohaesler@protonmail.com">mariohaesler@protonmail.com</a></p>
 
   <h2>2. Kurz gesagt</h2>
-  <p>Die App kommt ohne Konto und ohne Anmeldung aus. Dein Spielstand wird nur auf deinem Gerät gespeichert. Die App
-  sendet keine personenbezogenen Daten an uns. Partner liefern die freiwilligen Videos und erhalten Absturzberichte
-  und – mit deiner Einwilligung – eine Spielstatistik (Abschnitt 6).</p>
+  <p>Die App kommt ohne Konto und ohne Anmeldung aus. Dein Spielstand wird nur auf deinem Gerät gespeichert. Wir selbst
+  erhalten keine personenbezogenen Daten. Partner liefern die freiwilligen Videos und erhalten Absturzberichte und – im
+  EWR, im Vereinigten Königreich und in der Schweiz nur mit deiner Einwilligung – eine Spielstatistik; Google und
+  GameAnalytics nutzen dafür Kennungen deines Geräts (Abschnitt 6).</p>
 
   <h2>3. Dein Spielstand</h2>
   <p>Dein Spielstand (Fortschritt, Einstellungen, gekaufte Vorteile und die Kennungen abgeschlossener Käufe) liegt in der
@@ -130,15 +139,17 @@
   Store veröffentlichten Bewertungen.</p>
 
   <h2>6. Dienste von Partnern</h2>
-  <p>Die App nutzt drei Dienste von Partnern, die unten beschrieben sind: freiwillige Belohnungsvideos (Google AdMob),
-  Absturzberichte (Sentry) und – im EWR, im Vereinigten Königreich und in der Schweiz nur mit deiner Einwilligung –
-  eine Spielstatistik (GameAnalytics). Keiner davon dient dazu, dich zu identifizieren.</p>
+  <p>Die App nutzt drei Dienste von Partnern, die unten beschrieben sind: Belohnungsvideos (Google AdMob),
+  Absturzberichte (Sentry) und eine Spielstatistik (GameAnalytics). Google und GameAnalytics arbeiten mit Kennungen
+  deines Geräts, wie unten beschrieben; wir verknüpfen sie nicht mit anderen Daten über dich.</p>
   <h2>Belohnungsvideos (Google AdMob)</h2>
-  <p>Nur wenn du ein Video für eine Belohnung startest, lädt die App Werbung über Google AdMob (Google Ireland Limited,
-  Gordon House, Barrow Street, Dublin 4, Irland). Google verarbeitet dabei Geräteinformationen, deine IP-Adresse,
-  Interaktionen mit der Werbung und – nur wenn du es in der Tracking-Abfrage von Apple erlaubst – die Werbe-ID. Im EWR
-  und im Vereinigten Königreich fragt die App vorher deine Einwilligung ab (Art. 6 Abs. 1 lit. a DSGVO); du kannst
-  deine Wahl in den Einstellungen ändern. Datenschutzerklärung von Google:
+  <p>Die App startet Google AdMob (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) beim Öffnen und
+  lädt die Belohnungsvideos vorab, damit ein Video bereitsteht, wenn du eines möchtest. Im EWR und im Vereinigten
+  Königreich fragt sie vorher deine Einwilligung ab (Art. 6 Abs. 1 lit. a DSGVO) und startet AdMob erst nach deiner
+  Wahl; du kannst sie in den Einstellungen ändern. Google verarbeitet dann Geräteinformationen, deine IP-Adresse und
+  einen daraus abgeleiteten ungefähren Standort – auch wenn du nie ein Video ansiehst – sowie deine Interaktionen mit
+  der Werbung. Die Werbe-ID deines Geräts (IDFA) nutzt Google nur, wenn du es in der Tracking-Abfrage von Apple
+  erlaubst. Datenschutzerklärung von Google:
   <a href="https://policies.google.com/privacy?hl=de">policies.google.com/privacy</a>.</p>
   <h2>Absturzberichte (Sentry)</h2>
   <p>Stürzt die App ab oder tritt ein Fehler auf, sendet sie einen Bericht an Sentry (Functional Software, Inc.;
@@ -146,10 +157,15 @@
   enthält keinen Namen, keine Kontaktdaten und keine Werbe-ID. Rechtsgrundlage: unser berechtigtes Interesse an einem
   funktionierenden Spiel (Art. 6 Abs. 1 lit. f DSGVO).</p>
   <h2>Spielstatistik (GameAnalytics)</h2>
-  <p>Die App sendet anonyme Spielereignisse (z. B. Tutorial-Schritte, eröffnete Standorte, Käufe nach Produkt) mit einer
-  zufälligen Kennung an GameAnalytics ApS (Dänemark), damit wir sehen, wo das Spiel zu schwer oder zu leicht ist. Im
-  EWR, im Vereinigten Königreich und in der Schweiz nur mit deiner Einwilligung – das Spiel fragt einmal (Art. 6 Abs. 1
-  lit. a DSGVO); anderswo ist sie an. In jedem Fall kannst du sie jederzeit abschalten: Einstellungen › Spielstatistik.</p>
+  <p>Die App sendet Spielereignisse (z. B. Tutorial-Schritte, eröffnete Standorte, Käufe nach Produkt und Preis,
+  angesehene Videos) mit Geräteinformationen (Modell, iOS-Version, Sprache) an GameAnalytics ApS (Dänemark), damit wir
+  sehen, wo das Spiel zu schwer oder zu leicht ist. GameAnalytics verknüpft diese Ereignisse mit Kennungen deines
+  Geräts: einer selbst erzeugten Nutzer-ID, der Kennung für Anbieter (IDFV) und – nur wenn du es in der
+  Tracking-Abfrage von Apple erlaubst – der Werbe-ID (IDFA). Wir nutzen die Statistik nur, um das Spiel zu verbessern,
+  nicht für Werbung. Im EWR, im Vereinigten Königreich und in der Schweiz sendet die App sie nur mit deiner
+  Einwilligung – das Spiel fragt einmal (Art. 6 Abs. 1 lit. a DSGVO); anderswo ist sie an. In jedem Fall kannst du sie
+  jederzeit abschalten: Einstellungen › Spielstatistik. Datenschutzerklärung von GameAnalytics:
+  <a href="https://gameanalytics.com/privacy">gameanalytics.com/privacy</a>.</p>
 
   <h2>7. E-Mails an uns</h2>
   <p>Wenn du uns schreibst, verarbeiten wir deine E-Mail-Adresse und deine Nachricht, um dir zu antworten (Art. 6 Abs. 1
