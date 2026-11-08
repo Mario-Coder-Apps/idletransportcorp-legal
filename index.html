@@ -3,18 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Idle Transport Corp – Support</title>
-<meta name="description" content="Support for Idle Transport Corp, the idle logistics game for iPhone: questions, purchases, contact.">
+<title>Idle Transport Corp</title>
+<meta name="description" content="Idle Transport Corp, the idle logistics game for iPhone: download, support, purchases, contact.">
+<meta name="theme-color" content="#faba34">
 <link rel="icon" href="favicon.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 <script src="site.js"></script>
 </head>
 <body>
 <header>
+  <a class="studio-back" href="../">&lsaquo; Cavebeer Entertainment</a>
   <img src="icon.png" alt="Idle Transport Corp">
   <h1>Idle Transport Corp</h1>
   <p data-lang="en">Build your logistics empire – trucks, trains, ships and drones</p>
   <p data-lang="de">Baue dein Logistik-Imperium – mit Lkw, Zügen, Schiffen und Drohnen</p>
+  <a class="store" id="store" href="https://apps.apple.com/app/id6821350913"><span data-lang="en">Free on the App Store</span><span data-lang="de">Gratis im App Store</span></a>
+  <div class="iab" id="iab" hidden>
+    <div class="iab-arrow" aria-hidden="true">&#8599;</div>
+    <p class="iab-title"><span data-lang="en">This browser can't open the App Store</span><span data-lang="de">Dieser Browser kann den App Store nicht öffnen</span></p>
+    <ol data-lang="en">
+      <li>Tap <strong>&bull;&bull;&bull;</strong> in the top right corner</li>
+      <li>Choose <strong>Open in browser</strong></li>
+      <li>Tap <strong>Free on the App Store</strong> there</li>
+    </ol>
+    <ol data-lang="de">
+      <li>Tippe oben rechts auf <strong>&bull;&bull;&bull;</strong></li>
+      <li>Wähle <strong>Im Browser öffnen</strong></li>
+      <li>Tippe dort auf <strong>Gratis im App Store</strong></li>
+    </ol>
+    <button class="iab-button" type="button" id="copy-link"><span data-lang="en">Or copy the App Store link</span><span data-lang="de">Oder den App-Store-Link kopieren</span></button>
+  </div>
 </header>
 <nav class="lang"><a href="#en">English</a> · <a href="#de">Deutsch</a></nav>
 <main>
@@ -109,7 +127,32 @@
   <a class="page" href="privacy.html"><span data-lang="en">Privacy policy</span><span data-lang="de">Datenschutzerklärung</span></a> ·
   <a class="page" href="terms.html"><span data-lang="en">Terms of Service</span><span data-lang="de">Nutzungsbedingungen</span></a> ·
   <a class="page" href="impressum.html"><span data-lang="en">Legal notice</span><span data-lang="de">Impressum</span></a>
-  <p>© 2026 Mario Haesler</p>
+  <p>© 2026 Mario Haesler · <a href="../">Cavebeer Entertainment</a></p>
 </footer>
+<script>
+  // TikTok, Instagram and Facebook open links in their own in-app browser, which shows a blank page for the App Store
+  // (Apple answers an iPhone with a redirect to itms-appss://, which those browsers do not hand over). There the page
+  // shows the way out through the browser's menu and the link to copy. "?iab" previews it in any browser.
+  (function () {
+    var ua = navigator.userAgent || "";
+    var inApp = /Instagram|FBAN|FBAV|FB_IAB|TikTok|musical_ly|BytedanceWebview|Bytedance|Threads/i.test(ua);
+    if (!inApp && !/[?&]iab\b/.test(location.search)) return;
+    document.getElementById("iab").hidden = false;
+    var store = document.getElementById("store");
+    store.hidden = true;
+    store.style.display = "none";
+    var link = "https://apps.apple.com/app/id6821350913";
+    var btn = document.getElementById("copy-link");
+    btn.addEventListener("click", function () {
+      var de = document.documentElement.lang === "de";
+      var done = function () { btn.textContent = de ? "Kopiert – öffne Safari und füge ihn ein" : "Copied - open Safari and paste it"; };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(link).then(done, function () { prompt(de ? "Link kopieren:" : "Copy this link:", link); });
+      } else {
+        prompt(de ? "Link kopieren:" : "Copy this link:", link);
+      }
+    });
+  })();
+</script>
 </body>
 </html>

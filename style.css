@@ -77,5 +77,59 @@ mark { background: var(--mark); color: inherit; padding: 0 3px; border-radius: 4
 footer { text-align: center; padding: 10px 16px 40px; color: var(--ink-soft); font-size: 15px; }
 footer a { margin: 0 8px; }
 
+/* The way back to the studio page and the App Store button (2026-11-08: the page is the TikTok bio's landing page). */
+header { position: relative; }
+.studio-back {
+  position: absolute; top: 12px; left: 14px;
+  font-size: 14px; font-weight: 800; color: #33364d; text-decoration: none; opacity: 0.75;
+}
+.studio-back:hover { opacity: 1; }
+header img { margin-top: 14px; }
+header p, .iab p { color: #33364d; }   /* the yellow header and the white box stay light in dark mode too */
+
+.store {
+  display: inline-block;
+  margin: 18px 0 2px;
+  padding: 13px 26px;
+  border-radius: 16px;
+  background: #33364d;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 4px 0 #1f2133, 0 8px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.12s ease;
+}
+.store:active { transform: translateY(3px); box-shadow: 0 1px 0 #1f2133; }
+.store[hidden] { display: none; }
+
+.iab {
+  position: relative;
+  max-width: 420px;
+  margin: 18px auto 2px;
+  padding: 16px 18px 18px;
+  text-align: left;
+  background: #ffffff;
+  border: 2px solid var(--brand-edge);
+  border-radius: 18px;
+  color: #33364d;
+}
+.iab[hidden] { display: none; }
+.iab-title { font-weight: 900; font-size: 18px; margin: 0 0 8px; padding-right: 34px; }
+.iab ol { margin: 0 0 14px; padding-left: 22px; font-weight: 600; color: #33364d; }
+.iab li { color: #33364d; }
+.iab-arrow { position: absolute; top: 6px; right: 14px; font-size: 30px; font-weight: 900; color: var(--brand-edge); }
+.iab-button {
+  width: 100%;
+  padding: 11px 14px;
+  border: 0;
+  border-radius: 12px;
+  background: #ffe9a8;
+  color: #33364d;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
 /* Only the visitor's language when JavaScript runs (site.js); without it both stay. */
 .js [data-lang]:not(.shown) { display: none; }
