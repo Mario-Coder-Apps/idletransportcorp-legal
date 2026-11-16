@@ -133,3 +133,42 @@ header p, .iab p { color: #33364d; }   /* the yellow header and the white box st
 
 /* Only the visitor's language when JavaScript runs (site.js); without it both stay. */
 .js [data-lang]:not(.shown) { display: none; }
+
+/* The content pages (index.html in English, de/index.html in German; 2026-11-16): pitch, platform line, screenshots,
+   the three steps, the FAQ and the links to the other apps. The legal pages do not use these classes. */
+header .pitch { font-size: 18px; max-width: 520px; margin: 0 auto; }
+header .platform { margin-top: 12px; font-size: 14px; font-weight: 700; opacity: 0.8; }
+nav.lang a[aria-current] { color: var(--ink); text-decoration: underline; }
+
+.lead { font-size: 18px; font-weight: 600; }
+
+ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 10px 0 6px; }
+ol.steps li { counter-increment: step; position: relative; padding: 0 0 0 46px; margin: 0 0 12px; min-height: 32px; }
+ol.steps li::before {
+  content: counter(step);
+  position: absolute; left: 0; top: 0;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--brand); border: 2px solid var(--brand-edge);
+  color: #33364d; font-weight: 900; font-size: 16px; line-height: 28px; text-align: center;
+}
+
+.shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 14px; margin: 14px 0 6px; }
+@media (min-width: 620px) { .shots { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.shots figure { margin: 0; }
+.shots img {
+  display: block; width: 100%; height: auto;
+  border-radius: 14px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+  background: var(--line);
+}
+.shots figcaption { margin-top: 6px; font-size: 14px; line-height: 1.35; color: var(--ink-soft); }
+
+.faq h3 { margin-top: 20px; }
+.faq p { margin-top: 0; }
+
+ul.apps { list-style: none; padding: 0; margin: 8px 0 4px; }
+ul.apps li { margin: 0 0 10px; }
+ul.apps a { font-weight: 800; }
+
+@media (max-width: 420px) {
+  .content section.card { padding: 4px 18px 14px; }
+}
