@@ -172,3 +172,8 @@ ul.apps a { font-weight: 800; }
 @media (max-width: 420px) {
   .content section.card { padding: 4px 18px 14px; }
 }
+
+/* What's new (the changelog) */
+.changelog h3 .soft { font-weight: 600; }
+.changelog ul { padding-left: 20px; margin: 4px 0 10px; }
+.changelog li { margin: 0 0 6px; }
